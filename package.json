@@ -1,0 +1,25 @@
+{
+  "name": "electronappupdate",
+  "version": "1.0.0",
+  "description": "testing app update",
+  "main": "main.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/megasanjay/electronappupdate.git"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "electron .",
+    "build": "electron-builder build --win --publish never",
+    "deploy": "electron-builder build --win --publish always"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^11.0.2",
+    "electron-builder": "^22.9.1"
+  },
+  "dependencies": {
+    "electron-updater": "^4.3.5"
+  }
+}
